@@ -45,4 +45,6 @@ set expandtab
 set autoindent
 EOF
 
-
+# add Korean support
+sudo apt-get install -y language-pack-ko fonts-nanum ibus-hangul
+sudo locale-gen ko_KR.UTF-8
