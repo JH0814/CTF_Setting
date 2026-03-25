@@ -6,6 +6,8 @@ sudo apt-get update
 sudo apt-get install python3 python3-pip python3-dev git vim libssl-dev libffi-dev build-essential gdb ca-certificates curl gnupg -y
 
 # add pwntools
+echo 'export PATH=$HOME/.local/bin:$PATH' >> ~/.bashrc
+source ~/.bashrc
 python3 -m pip install --upgrade pip --break-system-packages
 python3 -m pip install --upgrade pwntools --break-system-packages
 
@@ -29,7 +31,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 sudo apt install qemu-utils qemu-system-x86 qemu-kvm -y
 
 # add gef to sudo
-wget -q https://raw.githubusercontent.com/bata24/gef/dev/install.sh -O- | sudo sh
+wget -q https://raw.githubusercontent.com/bata24/gef/dev/install.sh -O- | sudo PIP_BREAK_SYSTEM_PACKAGES=1 sh
 
 # add one_gadget and seccomp-tools
 sudo apt install gcc ruby-full -y
