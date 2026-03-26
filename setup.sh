@@ -6,8 +6,6 @@ sudo apt-get update
 sudo apt-get install python3 python3-pip python3-dev git vim libssl-dev libffi-dev build-essential gdb ca-certificates curl gnupg -y
 
 # add pwntools
-echo 'export PATH=$HOME/.local/bin:$PATH' >> ~/.bashrc
-source ~/.bashrc
 python3 -m pip install --upgrade pip --break-system-packages
 python3 -m pip install --upgrade pwntools --break-system-packages
 
@@ -50,3 +48,5 @@ EOF
 # add Korean support
 sudo apt-get install -y language-pack-ko fonts-nanum ibus-hangul
 sudo locale-gen ko_KR.UTF-8
+
+sudo reboot
