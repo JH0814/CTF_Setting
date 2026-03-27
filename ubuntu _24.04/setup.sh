@@ -10,6 +10,7 @@ python3 -m pip install --upgrade pip --break-system-packages
 python3 -m pip install --upgrade pwntools --break-system-packages
 
 # add pwndbg
+cd ~
 git clone https://github.com/pwndbg/pwndbg
 cd pwndbg
 ./setup.sh

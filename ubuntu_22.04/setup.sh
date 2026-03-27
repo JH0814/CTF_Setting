@@ -10,6 +10,7 @@ python3 -m pip install --upgrade pip
 python3 -m pip install --upgrade pwntools
 
 # add pwndbg
+cd ~
 git clone https://github.com/pwndbg/pwndbg
 cd pwndbg
 ./setup.sh
