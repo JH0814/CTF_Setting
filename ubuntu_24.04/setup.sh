@@ -52,7 +52,7 @@ sudo locale-gen ko_KR.UTF-8
 
 #zshell
 sudo apt-get install zsh -y
-sudo usermode -s $(whish zsh) $USER
+sudo usermod -s $(which zsh) $USER
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 sudo reboot
