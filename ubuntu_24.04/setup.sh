@@ -56,4 +56,7 @@ sudo usermod -s $(which zsh) $USER
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 echo 'export PATH=$HOME/.local/bin:$PATH' >> ~/.zshrc
 
+#For ghidra
+sudo apt-get install openjdk-21-jdk -y
+
 sudo reboot
