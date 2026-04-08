@@ -30,7 +30,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 sudo apt install qemu-utils qemu-system-x86 qemu-kvm -y
 
 # add gef to sudo
-wget -q https://raw.githubusercontent.com/bata24/gef/dev/install.sh -O- | sudo sh
+wget -q https://raw.githubusercontent.com/bata24/gef/dev/install-uv.sh -O- | sudo sh
 
 # add one_gadget and seccomp-tools
 sudo apt install gcc ruby-full -y
