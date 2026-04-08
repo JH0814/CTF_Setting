@@ -13,6 +13,7 @@
 ### Method 1
 - Download this .sh file
 ```bash
+chmod +x setup.sh
 ./setup.sh
 ```
 - Change Keyboard to Korean(Hangul)
@@ -20,10 +21,10 @@
 ### Method 2
 - Ubuntu 22.04
 ```bash
-wget https://raw.githubusercontent.com/JH0814/CTF_Setting/main/ubuntu_22.04/setup.sh | ./setup.sh
+wget https://raw.githubusercontent.com/JH0814/CTF_Setting/main/ubuntu_22.04/setup.sh && chmod +x setup.sh && ./setup.sh
 ```
 - Ubuntu 24.04
 ```bash
-wget https://raw.githubusercontent.com/JH0814/CTF_Setting/main/ubuntu_24.04/setup.sh | ./setup.sh
+wget https://raw.githubusercontent.com/JH0814/CTF_Setting/main/ubuntu_24.04/setup.sh && chmod +x setup.sh && ./setup.sh
 ```
 - Change Keyboard to Korean(Hangul)
