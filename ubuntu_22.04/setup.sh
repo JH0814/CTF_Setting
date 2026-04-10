@@ -54,6 +54,8 @@ sudo locale-gen ko_KR.UTF-8
 sudo apt-get install zsh -y
 sudo usermod -s $(which zsh) $USER
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+sed -i 's/plugins=(git)/plugins=(git zsh-syntax-highlighting)/g' ~/.zshrc
 echo 'export PATH=$HOME/.local/bin:$PATH' >> ~/.zshrc
 
 #For ghidra
