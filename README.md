@@ -28,3 +28,8 @@ wget -qO- https://raw.githubusercontent.com/JH0814/CTF_Setting/main/ubuntu_22.04
 wget -qO- https://raw.githubusercontent.com/JH0814/CTF_Setting/main/ubuntu_24.04/setup.sh | bash
 ```
 - Change Keyboard to Korean(Hangul)
+
+- WSL2(Ubuntu 24.04)
+```bash
+wget -qO- https://raw.githubusercontent.com/JH0814/CTF_Setting/main/WSL2/setup.sh | bash
+```
