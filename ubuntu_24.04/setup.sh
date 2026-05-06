@@ -9,11 +9,8 @@ sudo apt-get install python3 python3-pip python3-dev git vim libssl-dev libffi-d
 python3 -m pip install --upgrade pip --break-system-packages
 python3 -m pip install --upgrade pwntools --break-system-packages
 
-# add pwndbg
-cd ~
-git clone https://github.com/pwndbg/pwndbg
-cd pwndbg
-./setup.sh
+# add gef
+bash -c "$(wget https://gef.blah.cat/sh -O -)"
 
 # add docker
 sudo mkdir -m 0755 -p /etc/apt/keyrings
