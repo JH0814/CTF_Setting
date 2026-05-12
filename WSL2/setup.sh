@@ -48,4 +48,4 @@ sudo apt-get install -y language-pack-ko fonts-nanum
 sudo locale-gen ko_KR.UTF-8
 
 # install cpio
-sudo apt install cpio
+sudo apt install cpio -y
