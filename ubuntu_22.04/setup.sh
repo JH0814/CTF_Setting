@@ -50,4 +50,8 @@ sudo locale-gen ko_KR.UTF-8
 #For ghidra
 sudo apt-get install openjdk-21-jdk -y
 
+# install ARM
+sudo apt-get update
+sudo apt-get install qemu-user-static libc6-armel-cross gdb-multiarch -y
+
 sudo reboot

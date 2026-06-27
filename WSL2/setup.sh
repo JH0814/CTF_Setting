@@ -49,3 +49,7 @@ sudo locale-gen ko_KR.UTF-8
 
 # install cpio
 sudo apt install cpio -y
+
+# install ARM
+sudo apt-get update
+sudo apt-get install qemu-user-static libc6-armel-cross gdb-multiarch -y
