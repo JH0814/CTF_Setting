@@ -7,7 +7,7 @@ sudo apt-get install python3 python3-pip python3-dev git vim libssl-dev libffi-d
 
 # add pwntools
 python3 -m pip install --upgrade pip
-python3 -m pip install --upgrade pwntools
+python3 -m pip install --upgrade pwntools z3-solver pycryptodome
 
 # add gef
 bash -c "$(wget https://gef.blah.cat/sh -O -)"
