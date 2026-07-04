@@ -48,7 +48,7 @@ sudo apt-get install -y language-pack-ko fonts-nanum
 sudo locale-gen ko_KR.UTF-8
 
 #For ghidra
-sudo apt-get install openjdk-25-jdk -y
+sudo apt-get install openjdk-21-jdk -y
 
 # install cpio
 sudo apt install cpio -y
