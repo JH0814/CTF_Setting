@@ -1,8 +1,8 @@
 # Pwnable 문제 풀이 환경 Auto Setting
 
 ## Target OS
-- Ubuntu 22.04 Desktop
-- Ubuntu 24.04 Desktop
+- Ubuntu 22.04 Desktop (pwndbg)
+- Ubuntu 24.04 Desktop (pwndbg)
 
 ## Recommend to Install
 - ghidra
@@ -19,11 +19,11 @@ chmod +x setup.sh
 - Change Keyboard to Korean(Hangul)
 ---------------------------------------------
 ### Method 2
-- Ubuntu 22.04
+- Ubuntu 22.04 (pwndbg)
 ```bash
 wget -qO- https://raw.githubusercontent.com/JH0814/CTF_Setting/main/ubuntu_22.04/setup.sh | bash
 ```
-- Ubuntu 24.04
+- Ubuntu 24.04 (pwndbg)
 ```bash
 wget -qO- https://raw.githubusercontent.com/JH0814/CTF_Setting/main/ubuntu_24.04/setup.sh | bash
 ```

@@ -9,8 +9,8 @@ sudo apt-get install python3 python3-pip python3-dev git vim libssl-dev libffi-d
 python3 -m pip install --upgrade pip --break-system-packages
 python3 -m pip install --upgrade pwntools z3-solver pycryptodome --break-system-packages
 
-# add gef
-bash -c "$(wget https://gef.blah.cat/sh -O -)"
+# add pwndbg
+(git clone https://github.com/pwndbg/pwndbg "$HOME/pwndbg" && cd "$HOME/pwndbg" && ./setup.sh)
 
 # add docker
 sudo mkdir -m 0755 -p /etc/apt/keyrings
@@ -26,8 +26,8 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 # add qemu
 sudo apt install qemu-utils qemu-system-x86 qemu-kvm -y
 
-# add gef to sudo
-wget -q https://raw.githubusercontent.com/bata24/gef/dev/install-uv.sh -O- | sudo sh
+# add pwndbg to sudo
+sudo -H bash -c 'git clone https://github.com/pwndbg/pwndbg "$HOME/pwndbg" && cd "$HOME/pwndbg" && ./setup.sh'
 
 # add one_gadget and seccomp-tools
 sudo apt install gcc ruby-full -y
