@@ -1,0 +1,47 @@
+# add 32bit
+sudo dpkg --add-architecture i386
+sudo apt update
+sudo apt install libc6:i386 -y
+sudo apt-get update
+sudo apt-get install python3 python3-pip python3-dev git vim libssl-dev libffi-dev build-essential gdb ca-certificates wget -y
+
+# add pwntools
+python3 -m pip install --upgrade pip --break-system-packages
+python3 -m pip install --upgrade pwntools z3-solver pycryptodome --break-system-packages
+
+# add pwndbg
+(git clone https://github.com/pwndbg/pwndbg "$HOME/pwndbg" && cd "$HOME/pwndbg" && ./setup.sh)
+
+# add qemu
+sudo apt install qemu-utils qemu-system-x86 qemu-kvm -y
+
+# add gef to sudo
+wget -q https://raw.githubusercontent.com/bata24/gef/dev/install-uv.sh -O- | sudo sh
+
+# add one_gadget and seccomp-tools
+sudo apt install gcc ruby-full -y
+sudo gem install one_gadget seccomp-tools
+
+# add vim settings
+cat <<EOF >> ~/.vimrc
+set number
+set ruler
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set autoindent
+EOF
+
+# add Korean support
+sudo apt-get install -y language-pack-ko fonts-nanum
+sudo locale-gen ko_KR.UTF-8
+
+#For ghidra
+sudo apt-get install openjdk-21-jdk -y
+
+# install cpio
+sudo apt install cpio -y
+
+# install ARM
+sudo apt-get update
+sudo apt-get install qemu-user-static libc6-armel-cross gdb-multiarch -y

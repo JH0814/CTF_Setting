@@ -38,3 +38,9 @@ wget -qO- https://raw.githubusercontent.com/JH0814/CTF_Setting/main/WSL2/setup.s
 ```bash
 wget -qO- https://raw.githubusercontent.com/JH0814/CTF_Setting/main/WSL2_pwndbg/setup.sh | bash
 ```
+
+- WSL2(Ubuntu 24.04, pwndbg, Docker 설치 제외)
+```bash
+bash WSL2_pwndbg_no_docker/setup.sh
+```
+  저장소를 내려받은 뒤 루트 디렉터리에서 실행합니다. 기존 Docker 설치 및 설정은 변경하지 않습니다.
