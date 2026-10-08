@@ -26,8 +26,8 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 # add qemu
 sudo apt install qemu-utils qemu-system-x86 qemu-kvm -y
 
-# add pwndbg to sudo
-sudo -H bash -c 'git clone https://github.com/pwndbg/pwndbg "$HOME/pwndbg" && cd "$HOME/pwndbg" && ./setup.sh'
+# add gef to sudo
+wget -q https://raw.githubusercontent.com/bata24/gef/dev/install-uv.sh -O- | sudo sh
 
 # add one_gadget and seccomp-tools
 sudo apt install gcc ruby-full -y
