@@ -3,6 +3,7 @@
 ## Target OS
 - Ubuntu 22.04 Desktop (pwndbg)
 - Ubuntu 24.04 Desktop (pwndbg)
+- Ubuntu 26.04 Desktop (pwndbg)
 
 ## Recommend to Install
 - ghidra
@@ -26,6 +27,10 @@ wget -qO- https://raw.githubusercontent.com/JH0814/CTF_Setting/main/ubuntu_22.04
 - Ubuntu 24.04 (pwndbg)
 ```bash
 wget -qO- https://raw.githubusercontent.com/JH0814/CTF_Setting/main/ubuntu_24.04/setup.sh | bash
+```
+- Ubuntu 26.04 (pwndbg)
+```bash
+wget -qO- https://raw.githubusercontent.com/JH0814/CTF_Setting/main/ubuntu_26.04/setup.sh | bash
 ```
 - Change Keyboard to Korean(Hangul)
 
