@@ -3,7 +3,7 @@ sudo dpkg --add-architecture i386
 sudo apt update
 sudo apt install libc6:i386 -y
 sudo apt-get update
-sudo apt-get install python3 python3-pip python3-dev python3-venv git vim libssl-dev libffi-dev build-essential gdb ca-certificates curl gnupg -y
+sudo apt-get install python3 python3-pip python3-dev python3-venv git vim libssl-dev libffi-dev build-essential cmake gdb ca-certificates curl gnupg -y
 
 # add pwntools
 python3 -m venv "$HOME/ctf"
