@@ -3,14 +3,15 @@ sudo dpkg --add-architecture i386
 sudo apt update
 sudo apt install libc6:i386 -y
 sudo apt-get update
-sudo apt-get install python3 python3-pip python3-dev git vim libssl-dev libffi-dev build-essential gdb ca-certificates curl gnupg -y
+sudo apt-get install python3 python3-pip python3-dev python3-venv git vim libssl-dev libffi-dev build-essential cmake pkg-config gdb ca-certificates curl gnupg -y
 
 # add pwntools
-python3 -m pip install --upgrade pip --break-system-packages
-python3 -m pip install --upgrade pwntools z3-solver pycryptodome --break-system-packages
+python3 -m venv "$HOME/ctf"
+"$HOME/ctf/bin/python" -m pip install --upgrade pip
+"$HOME/ctf/bin/python" -m pip install --upgrade pwntools z3-solver pycryptodome
 
 # add pwndbg
-git clone https://github.com/pwndbg/pwndbg && cd pwndbg && ./setup.sh
+curl --proto '=https' --tlsv1.2 -LsSf https://install.pwndbg.re | sh -s -- -t pwndbg-gdb
 
 # add docker
 sudo mkdir -m 0755 -p /etc/apt/keyrings
@@ -25,9 +26,6 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 
 # add qemu
 sudo apt install qemu-utils qemu-system-x86 qemu-kvm -y
-
-# add gef to sudo
-wget -q https://raw.githubusercontent.com/bata24/gef/dev/install-uv.sh -O- | sudo sh
 
 # add one_gadget and seccomp-tools
 sudo apt install gcc ruby-full -y
